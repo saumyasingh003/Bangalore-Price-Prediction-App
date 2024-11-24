@@ -1,0 +1,114 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Global Styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Background Image */
+.img {
+  background: url("https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw; /* Occupies half the screen */
+  height: 100%;
+}
+
+.fullform {
+  padding: 20px;
+}
+/* Form Styling */
+.form {
+  width: 100%; /* Occupies the remaining half */
+  margin: auto; /* Centers the form vertically */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9); /* Adds a slight opacity effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 2vh;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.area,
+.location,
+.submit {
+  font-family: "Roboto", sans-serif;
+  width: 30%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.area,
+.location {
+  background: #f9f9f9;
+}
+
+.area:focus,
+.location:focus {
+  outline: 2px solid #a5dc86;
+}
+
+.submit {
+  background: #23af28;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background: #45a049;
+}
+
+.switch-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.switch-field label {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.switch-field input:checked + label {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+  background-color: #d8d8d8;
+}
+
+.result {
+  background: #0fc024;
+  color: #353534;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
