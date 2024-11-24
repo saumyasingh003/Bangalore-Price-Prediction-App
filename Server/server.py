@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import util
-
+import os
+from dotenv import load_dotenv
 app = Flask(__name__)
 
 @app.route('/get_location_names', methods=['GET'])
@@ -27,6 +28,7 @@ def predict_home_price():
     return response
 
 if __name__ == "__main__":
-    print("Starting Python Flask Server For Home Price Prediction...")
+    port = int(os.getenv('FLASK_PORT', 5000))
+    print(f"Starting Python Flask Server For Home Price Prediction on port {port}...")
     util.load_saved_artifacts()
-    app.run(host ='localhost' , port = 5000)
+    app.run(host='localhost', port=port)
