@@ -31,4 +31,4 @@ if __name__ == "__main__":
     port = int(os.getenv('FLASK_PORT', 5000))
     print(f"Starting Python Flask Server For Home Price Prediction on port {port}...")
     util.load_saved_artifacts()
-    app.run(host='localhost', port=port)
+    app.run(host="0.0.0.0", port=port)
